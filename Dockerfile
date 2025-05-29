@@ -4,6 +4,11 @@ FROM node:18
 # Set working directory inside the image
 WORKDIR /app
 
+LABEL maintainer = "David Granger"
+LABEL description = "Getting used to Docker"
+LABEL cohort = "January 2025 Cohort"
+LABEL animal = "Docker whale"
+
 # Copy package.json and package-lock.json first (to leverage Docker cache)
 COPY package*.json ./
 
